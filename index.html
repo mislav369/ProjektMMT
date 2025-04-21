@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nogomet</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="mma.html">MMA</a></li>
+          <li><a href="kosarka.html">Košarka</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>NOGOMET</h1>
+    </section>
+
+    <section class="content">
+      <h2>O nogometu</h2>
+      <p>
+        Nogomet, poznat i kao „najvažnija sporedna stvar na svijetu“, je sport
+        koji okuplja milijune zaljubljenika diljem planeta. Igraju ga dvije
+        ekipe od po jedanaest igrača na pravokutnom travnatom terenu s ciljem da
+        postignu što više pogodaka u protivničku mrežu.
+      </p>
+
+      <p>
+        Jednostavna pravila igre omogućila su da se nogomet brzo proširi diljem
+        svijeta, dok su njegove taktičke dubine i tehničke mogućnosti ono što
+        privlači i fascinira gledatelje svih generacija.
+      </p>
+
+      <p>
+        U službenim natjecanjima utakmica traje 90 minuta, podijeljenih u dva
+        poluvremena od po 45 minuta, a svaka momčad pokušava nadigrati drugu
+        koristeći različite strategije – od čvrstih obrana do napadačkih
+        formacija.
+      </p>
+
+      <!-- Skriveni tekst -->
+      <div id="viseTeksta" style="display: none">
+        <p>
+          Nogomet nije samo fizički zahtjevan, već i psihološki izazovan – traži
+          visok stupanj koncentracije, timskog duha i donošenja brzih odluka.
+        </p>
+        <p>
+          Kroz povijest, nogomet je postao mnogo više od igre. To je kulturni
+          fenomen, sredstvo izražavanja identiteta, ponosa i pripadnosti.
+        </p>
+        <p>
+          Nogomet nudi i iznimne tehničke vještine: od preciznih dodavanja,
+          brzih driblinga, atraktivnih udaraca, do vrhunskih obrana vratara.
+        </p>
+        <p>
+          Osim profesionalnog nogometa, sport je jednako popularan i na
+          amaterskoj razini.
+        </p>
+        <p>
+          Bez obzira igraš li ga sam, s prijateljima ili ga samo voliš gledati,
+          nogomet ima moć povezivanja ljudi i podizanja svijesti o fair-playu.
+        </p>
+      </div>
+
+      <button onclick="toggleTekst()" id="dugmeVise" class="btn btn-center">
+        Prikaži više
+      </button>
+      <div class="buttons">
+        <a
+          href="https://hr.wikipedia.org/wiki/Nogomet"
+          target="_blank"
+          class="btn"
+          >Više o pravilima</a
+        >
+        <a href="https://www.fifa.com/" target="_blank" class="btn"
+          >Službena stranica FIFA-e</a
+        >
+      </div>
+      <hr />
+      <h2>Galerija</h2>
+      <div class="image-row">
+        <img src="images/nogometnaTekma.png" alt="Slika 1" />
+        <img src="images/golman.bmp" alt="Slika 2" />
+        <img src="images/stadion.jpg" alt="Slika 3" />
+        <img src="images/real.jpg" alt="Slika 4" />
+        <img src="images/mb.jpg" alt="Slika 5" />
+        <img src="images/download.webp" alt="Slika 6" />
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="students">
+      <h2>O nama</h2>
+      <div class="student-cards">
+        <div class="card">
+          <img
+            src="images/profilna.jpg"
+            alt="Krešimir"
+            onclick="openModal('images/profilna.jpg')"
+          />
+          <p class="name">
+            <button class="info-btn" onclick="toggleInfo('kresimir-info')">
+              Krešimir
+            </button>
+          </p>
+          <div class="student-info" id="kresimir-info">
+            <ul>
+              <li>
+                <a href="https://hr.wikipedia.org/wiki/Žepče" target="_blank"
+                  >Mjesto rođenja: Žepče</a
+                >
+              </li>
+              <li>
+                <a href="https://www.osijek.hr/" target="_blank"
+                  >Mjesto stanovanja: Osijek</a
+                >
+              </li>
+              <li><a target="_blank">Osnovna škola Žepče</a></li>
+              <li>
+                <a href="https://smszepce.info/" target="_blank"
+                  >Srednja mješovita škola Žepče</a
+                >
+              </li>
+              <li>
+                <a href="https://www.ferit.unios.hr" target="_blank"
+                  >Fakultet: FERIT Osijek</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="images/profilnaMislav.jpg"
+            alt="Mislav"
+            onclick="openModal('images/profilnaMislav.jpg')"
+          />
+          <p class="name">
+            <button class="info-btn" onclick="toggleInfo('mislav-info')">
+              Mislav
+            </button>
+          </p>
+          <div class="student-info" id="mislav-info">
+            <ul>
+              <li>
+                <a href="https://www.slavonski-brod.hr/" target="_blank"
+                  >Mjesto rođenja: Slavonski Brod</a
+                >
+              </li>
+              <li>
+                <a href="https://www.osijek.hr/" target="_blank"
+                  >Mjesto stanovanja: Osijek</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://os-btleakovica-bosnjaci.skole.hr/"
+                  target="_blank"
+                  >Osnovna škola Bošnjaci</a
+                >
+              </li>
+              <li>
+                <a href="https://gimnazija-zupanja.skole.hr/" target="_blank"
+                  >Opća gimnazija Županja</a
+                >
+              </li>
+              <li>
+                <a href="https://www.ferit.unios.hr" target="_blank"
+                  >Fakultet: FERIT Osijek</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg" />
+    </div>
+
+    <hr />
+
+    <section class="questiongif">
+      <a href="odgovori.html" class="question-link">
+        Bavim li se i ja ovim sportom ili ga samo volim?
+      </a>
+    </section>
+
+    <footer>
+      <p>
+        Ova stranica izrađena je za vrijeme pohađanja
+        <a href="https://www.ferit.unios.hr">FERIT-a u Osijeku</a> u sklopu
+        kolegija Multimedijska tehnika
+      </p>
+    </footer>
+  </body>
+  <script>
+    function openModal(imageSrc) {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImg");
+      modal.style.display = "block";
+      modalImg.src = imageSrc;
+    }
+
+    function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+
+    function toggleInfo(id) {
+      const infoDiv = document.getElementById(id);
+      if (infoDiv.style.display === "block") {
+        infoDiv.style.display = "none";
+      } else {
+        infoDiv.style.display = "block";
+      }
+    }
+    function toggleTekst() {
+      const tekst = document.getElementById("viseTeksta");
+      const dugme = document.getElementById("dugmeVise");
+
+      if (tekst.style.display === "none") {
+        tekst.style.display = "block";
+        dugme.textContent = "Sakrij tekst";
+      } else {
+        tekst.style.display = "none";
+        dugme.textContent = "Prikaži više";
+      }
+    }
+  </script>
+</html>
